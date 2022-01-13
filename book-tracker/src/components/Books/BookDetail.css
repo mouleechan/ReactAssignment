@@ -1,0 +1,59 @@
+.book-detail {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem;
+    margin: 1rem 0;
+    background-color: #89d4f1ed;
+  }
+  
+  .book-detail_description {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: flex-end;
+    flex-flow: column-reverse;
+    justify-content: flex-start;
+    flex: 1;
+  }
+  
+  .book-detail h2 {
+    color: #09ee83;
+    font-size: 1rem;
+    flex: 1;
+    margin: 0 1rem;
+    color: black;
+  }
+  
+  .book-detail_price {
+    display: flex;
+    font-size: 1rem;
+    font-weight: bold;
+    color: white;
+    background-color: #0af030fb;
+    border: 1px solid white;
+    padding: 0.5rem;
+    border-radius: 12px;
+  }
+  
+  @media (min-width: 580px) {
+    .book-detail_description {
+      flex-direction: row;
+      align-items: center;
+      justify-content: flex-start;
+      flex: 1;
+    }
+  
+    .book-detail_description h2 {
+      font-size: 1.25rem;
+    }
+
+    .book-detail_description h3 {
+      font-size: 1rem;
+    }
+  
+    .book-detail_price {
+      font-size: 1.25rem;
+      padding: 0.5rem 1.5rem;
+    }
+  }
